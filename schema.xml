@@ -120,7 +120,10 @@
      required, it is highly recommended. A <uniqueKey> is present in almost all Solr 
      installations. See the <uniqueKey> declaration below where <uniqueKey> is set to "id".
    -->   
-  <!--  <fieldType name="is_string" class="solr.TextField">
+
+
+   
+  <fieldType name="is_string" class="solr.TextField">
     <analyzer type="index">
       <tokenizer class="solr.WhitespaceTokenizerFactory"/>
       <filter class="solr.LowerCaseFilterFactory"/>
@@ -129,7 +132,7 @@
       <tokenizer class="solr.WhitespaceTokenizerFactory"/>
       <filter class="solr.LowerCaseFilterFactory"/>
     </analyzer>
-  </fieldType> -->
+  </fieldType>
 
 
    <field name="id" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
